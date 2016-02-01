@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #333333;
+    color: #fff;
 }
 
 /* Wrapping element */
@@ -31,4 +33,33 @@ textarea {
     .carousel-caption {
         z-index: 10 !important;
     }
+}
+
+.title {
+    font-family: 'Brush Script MT',Phyllis,'Lucida Handwriting',cursive;
+    font-size: 50px;
+    color: #D7B583;
+}
+
+.verse {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #D7B583;
+    font-size: 20px;
+}
+
+
+.crown {
+    background-position: center;
+    background-image: url(https://www.theknot.com/gs/assets/guest/themes/gatsby_love-gold_&_black/section_title_border_image-2fe7d62813860091d2cfc3d57a92b4ff.png);
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+
+.accomodations {
+    font-family: "Dancing Script";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: normal;
+    color: #CCB198;
 }
