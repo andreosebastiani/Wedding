@@ -44,6 +44,8 @@ namespace Wedding.Controllers
             return View();
         }
 
+       
+
         // POST: Attendees/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -53,6 +55,19 @@ namespace Wedding.Controllers
             {
                 _context.Attendee.Add(attendee);
                 _context.SaveChanges();
+
+                if (attendee.IsAttending == true)
+                {
+                    var message = "<strong>" + attendee.FirstName + "</strong>" + " - Thank you for your reservation. " + "<br />" + "We look forward to seeing you!";
+                    return RedirectToAction("ThankYou", "Home", new { attending = message });
+                }
+                else if (attendee.IsAttending == false)
+                {
+                    var sorry = "<strong>" + attendee.FirstName + "</strong>" + " - We're sad that you won't be joining us in celebrating our special day. " + "<br />" + "<br />" + "If anything changes, please contact us!";
+                    return RedirectToAction("Sorry", "Home", new { notAttending = sorry });
+                }
+
+
                 return RedirectToAction("Index");
             }
             return View(attendee);

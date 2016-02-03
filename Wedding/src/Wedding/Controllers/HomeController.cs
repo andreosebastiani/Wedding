@@ -20,6 +20,18 @@ namespace Wedding.Controllers
             return View();
         }
 
+        public IActionResult ThankYou(string attending)
+        {
+            ViewBag.message = attending;
+            return View();
+        }
+
+        public IActionResult Sorry(string notAttending)
+        {
+            ViewBag.sorry = notAttending;
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

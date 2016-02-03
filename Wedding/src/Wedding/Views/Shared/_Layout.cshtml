@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - Wedding</title>
 
+        @RenderSection("Styles", required: false)
+
         <environment names="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
             <link rel="stylesheet" href="~/css/site.css" />
@@ -28,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a asp-controller="Home" asp-action="Index" class="navbar-brand">Wedding</a>
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand nav-brand">Maria & Dustin</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -39,16 +41,15 @@
                             <a asp-controller="Attendees" asp-action="Create">RSVP</a>
                         </li>
                     </ul>
-                    @await Html.PartialAsync("_LoginPartial")
                 </div>
             </div>
         </div>
         <div class="container body-content">
             @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; 2016 - Wedding</p>
-            </footer>
+            <hr class="style8" />
+            <footer>     
+                <p>&copy; 2016 - Wedding</p>           
+            </footer>            
         </div>
 
         <environment names="Development">

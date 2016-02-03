@@ -1,8 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #333333;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
+    font-family: Verdana;
 }
 
 /* Wrapping element */
@@ -35,6 +36,12 @@ textarea {
     }
 }
 
+.nav-brand {
+    font-family: 'Brush Script MT',Phyllis,'Lucida Handwriting',cursive;
+    color: #D7B583 !important;
+    font-size: 26px;
+}
+
 .title {
     font-family: 'Brush Script MT',Phyllis,'Lucida Handwriting',cursive;
     font-size: 50px;
@@ -63,3 +70,19 @@ textarea {
     font-weight: normal;
     color: #CCB198;
 }
+
+
+hr.style8 {
+	border-top: 1px solid #D7B583;
+	border-bottom: 1px solid #fff;
+    color: #D7B583 !important;
+}
+hr.style8:after {
+    color: #D7B583 !important;
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #D7B583;
+	border-bottom: 1px solid #fff;
+}
+
