@@ -1,9 +1,11 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fff;
-    color: #000000;
-    font-family: Verdana;
+    background-color: #333333;
+    color: #fff;
+    /*font-family: Cambria;*/
+
+    font-family: 'Trebuchet MS';
 }
 
 /* Wrapping element */
@@ -37,21 +39,21 @@ textarea {
 }
 
 .nav-brand {
-    font-family: 'Brush Script MT',Phyllis,'Lucida Handwriting',cursive;
+    font-family: Zapf Chancery, cursive;
     color: #D7B583 !important;
-    font-size: 26px;
+    font-size: 16px;
 }
 
 .title {
     font-family: 'Brush Script MT',Phyllis,'Lucida Handwriting',cursive;
-    font-size: 50px;
+    font-size: 42px;
     color: #D7B583;
 }
 
 .verse {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #D7B583;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -84,5 +86,9 @@ hr.style8:after {
 	margin-top: 2px;
 	border-top: 1px solid #D7B583;
 	border-bottom: 1px solid #fff;
+}
+
+.table-text {
+    color: black !important;
 }
 
