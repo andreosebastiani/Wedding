@@ -4,9 +4,47 @@
     ViewData["Title"] = "Contact";
 }
 
-<div class="row">&nbsp;</div>
-<div class="row">&nbsp;</div>
+<style>
+    .theme-image {
+    background-position: top center;
+    background-image: url('https://www.theknot.com/gs/assets/guest/themes/majestic-champagne/theme_image-e49cc328e3dce2ccff1975b008ffcff4.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-<div class="alert alert-success" role="alert">
-    <h1>@Html.Raw(ViewBag.message)</h1>
+    .theme-image-bottom {
+            background-position: bottom center;
+    background-image: url(https://www.theknot.com/gs/assets/guest/themes/majestic-champagne/theme_image_bottom-d49715100c2f772be95ef9f20be335ee.png);
+    background-size: auto 75%;
+    }
+
+</style>
+
+<div class="theme-image">
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+
+
+    <div class="text-center col-md-offset-2 col-md-8">
+        <div class="alert alert-success" role="alert">
+            <h1>@Html.Raw(ViewBag.message)</h1>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row text-center">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-lg btn-default">Back to Home</a>
+    </div>
+
+</div>
+<div class="theme-image-bottom">
+
 </div>

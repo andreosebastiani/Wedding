@@ -1,68 +1,599 @@
-﻿@{
+﻿@model Wedding.Models.Attendee
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 
-<div class="row">&nbsp;</div>
-<div class="row">&nbsp;</div>
 
-<div class="row">
-    <div class="text-center">
-        <h2 class="title">Let love be your highest goal</h2>
-        <p class="verse">1 Corinthians 14:1</p>
+<link rel='stylesheet' id='yt-impressive-like-style-css' href="~/css/impressive.css" type='text/css' media='all' />
+<link rel='stylesheet' id='custom-styles-css' href="~/css/google.css" type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href="~/css/composer.css" type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href="~/css/fonts.css" type='text/css' media='all' />
+<link rel='stylesheet' id='theme-default-style-css' href="~/css/style.css" type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css' href="~/css/flexslider.css" type='text/css' media='all' />
+<link rel='stylesheet' id='custom-styles-css' href="~/css/custom.css" type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href="~/css/jetpack.css" type='text/css' media='all' />
+
+
+<body class="not-logged-in yeah-framework home page page-id-326 page-template page-template-template-fullwidth-100 page-template-template-fullwidth-100-php webkit-browser mac-platform desktop blog-style-timeline scroll-fix-header layout-fullwidth onepage-mode wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
+
+
+    <div id="page" class="hfeed site full-width-wrapper">
+
+        <div class="inner-wrapper">
+
+            <header id="masthead" class="site-header full-width-wrapper hidden-print" role="banner">
+
+                <div class="site-banner" id="site-banner">
+                    <div class="container">
+                        <div class="site-branding hidden">
+                            <h1 class="site-title site-logo plain-text-logo">
+                                <a href="http://dustinandmaria.com/" title="Maria and Dustin Are Getting Married" rel="home">Maria and Dustin Wedding</a>
+                            </h1><h2 class="site-description">Maria &amp; Dustin</h2>
+                        </div><nav id="site-navigation" class="main-navigation" role="navigation">
+                            <div class="sr-only skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+                            <div class="site-navigation-menu-container">
+                                <ul id="site-navigation-menu-container" class="menu">
+                                    <li class="menu-item-logo hidden-md hidden-lg">
+                                        <div class="site-branding">
+                                            <h1 class="site-title site-logo plain-text-logo">
+                                                <a href="http://dustinandmaria.com/" title="Maria and Dustin Are Getting Married" rel="home">Maria and Dustin Wedding</a>
+                                            </h1><h2 class="site-description">Maria &amp; Dustin</h2>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item-anchor"><a href="#section-we">We</a></li>
+                                    <li class="menu-item-anchor"><a href="#section-our-story">Our Story</a></li>
+                                    <li class="menu-item-anchor"><a href="#section-the-wedding">The Wedding</a></li>
+                                    <li class="menu-item-anchor"><a href="#section-rsvp">RSVP</a></li>
+                                    <li class="menu-item-anchor"><a href="#section-registry">Registry</a></li>
+                                </ul>
+                            </div>
+                        </nav><!-- #site-navigation --><a href="javascript:void(0)" class="main-menu-toggle hidden-md hidden-lg">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </a>
+                    </div>
+                </div>
+            </header><!-- #masthead -->
+
+
+            <div id="main" class="site-main">
+                <div class="full-width-wrapper hidden-print hero-banner gradient-shadow-overlay">
+                    <div class="loader"></div>
+                    <div class="hero-banner-slider visibility-hidden" data-bg=""
+                         data-role="hero-banner">
+                        <div class="yeahslider" data-settings="{&quot;selector&quot;:&quot;.slides &gt; li&quot;,&quot;controlNav&quot;:false,&quot;directionNav&quot;:false,&quot;pausePlay&quot;:false,&quot;animationLoop&quot;:false,&quot;animation&quot;:&quot;fade&quot;,&quot;pauseOnHover&quot;:false,&quot;slideshowSpeed&quot;:7000,&quot;animationSpeed&quot;:1500,&quot;useCSS&quot;:true,&quot;touch&quot;:false,&quot;keyboard&quot;:false,&quot;allowOneSlide&quot;:true}" data-init="none"><ul class="slides"><li data-thumb=""><img width="1024" height="683" src="~/images/horses w D.jpg" class="attachment-full size-full" alt="Maria+Dustin" sizes="(max-width: 1024px) 100vw, 1024px" /></li></ul></div>
+                    </div><div class="hero-banner-overlay-layer full-width-wrapper visibility-hidden">
+                        <div class="hero-banner-overlay-layer-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 hero-banner-image-area text-center">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-sm-pull-4 col-md-4 hero-banner-groom-area text-center">
+                                        <h3><span class="first-name">&nbsp;</span> <span class="last-name">&nbsp;</span></h3>
+                                    </div>
+                                    <div class="col-xs-12 hidden-sm hidden-md hidden-lg hero-banner-ampersand text-center">&nbsp;</div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 hero-banner-bride-area text-center">
+                                        <h3><span class="first-name">&nbsp;</span> <span class="last-name">&nbsp;</span></h3>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="hero-banner-timer text-center">
+
+                                    </div>
+                                </div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+
+                                <div class="text-center title" style="color: white !important;">
+                                    Maria Sebastiani
+                                    &amp;
+                                    Dustin Houghton
+                                    <br />
+                                    Lexington, Kentucky
+                                    <br />
+                                    May 7th, 2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="site-main-bg"></div>			<div class="full-width-wrapper head-zigzag zigzag-border zigzag-border-top"></div>
+
+
+                <div id="primary" class="content-area full-width-wrapper overflow-hidden printable-section">
+
+
+                    <main id="content" class="site-content" role="main">
+
+
+
+
+                        <article id="post-326" class="post-326 page type-page status-publish hentry">
+
+                            <div class="entry-content">
+                                <section class="full-width-wrapper yt-vc-section vc_custom_1412696654851" id="section-we"
+                                         style="background-position:center top !important; background-color: #fff !important;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element">
+                                                    <div class="wpb_wrapper">
+                                                        <p style="text-align: center;">Our big day is fast approaching, and we're incredibly excited to share this experience with all of our friends and family. Keep tabs on our process, and learn more about our wedding!</p>
+                                                        <p style="text-align: center;">We'll see all of you soon!</p>
+                                                        <p style="text-align: center;">Maria &amp; Dustin</p>
+
+                                                    </div>
+                                                </div> <div class="clearfix"></div>
+                                                <div class="yt-vc-element yt-vc-divider style-shadow-down"><div class="divider"></div></div>
+                                                <div class="clearfix"></div><div class="row yt-vc-row">
+                                                    <div class="col-sm-5 yt-vc-column">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="yt-vc-element yt-vc-iconbox alignment-center size-default with-subline">
+                                                                <img width="300" height="300" src="~/images/engagmeny.jpg" class="iconbox-image" alt="engagementPhoto" sizes="(max-width: 300px) 100vw, 300px" />
+                                                                <h3 class="iconbox-heading"><em>The</em> BRIDE</h3><div class="iconbox-content">
+                                                                    <p>
+                                                                        <strong>Maria</strong>
+                                                                        ...
+                                                                    <p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-2 yt-vc-column">
+                                                        <div class="wpb_wrapper">
+
+                                                            <div class="wpb_single_image yt-vc-element vc_align_center">
+                                                                <div class="wpb_wrapper">
+
+                                                                    <img width="162" height="110" src="~/images/heart.png" alt="heart" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-5 yt-vc-column">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="yt-vc-element yt-vc-iconbox alignment-center size-default with-subline">
+                                                                <img width="300" height="300" src="~/images/engagmeny.jpg" class="iconbox-image" alt="horses" sizes="(max-width: 300px) 100vw, 300px" />
+                                                                <h3 class="iconbox-heading"><em>The</em> GROOM</h3><div class="iconbox-content">
+                                                                    <p>
+                                                                        <strong>Dustin</strong>
+                                                                        ...
+                                                                    <p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                                <section class="full-width-wrapper yt-vc-section vc_custom_1414060817280" id="section-our-story"
+                                         style="background-position:center top !important; background-color: #505050 !important; color: #fff !important;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h1 style="text-align: center; color: #fff;"><em>Our</em> Story</h1>
+
+                                                    </div>
+                                                </div> <div class="yt-vc-element-wrapper yt-vc-timeline">
+                                                    <div class="yt-vc-element yt-vc-timeline-item with-subline position-right pull-right text-left">
+                                                        <h2 class="timeline-heading">Nov 2014</h2><span class="timeline-subline"><em>Jesus Prom</em></span><div class="timeline-content">
+                                                            <p>
+                                                                We met at an event called Jesus Prom on November 7th, 2014. Jesus Prom is a prom for individuals who have disabilities to enjoy a fun night of dancing, games, makeup, photography, food, and prizes. My dear friend and maid of honor, Martha, have been attending the event for the last couple of years without an escort. (An escort is a volunteer who serves as the individual’s date for that night.) It wasn’t until Prom of 2014, Martha received one who proved to be someone very special and spectacular.
+                                                            </p>
+                                                        </div>
+                                                    </div><div class="yt-vc-element yt-vc-timeline-item with-subline position-left pull-left text-right">
+                                                        <h2 class="timeline-heading">2008</h2><span class="timeline-subline"><em></em></span><div class="timeline-content">
+                                                            <p>
+                                                                As Martha and I were entering the doorway, we were stopped by a man who asked if Martha would like to be accompanied by an escort. After talking to Martha earlier about her wanting an escort, I voiced for her that she would. The nice man pointed to one of the hundred volunteers in line who was Dustin. Dustin was not the next volunteer in line or close to the front, but in God’s plan, he was chosen for a reason. Martha and I met a wonderful person who was funny, sweet, and fun to be around. Jesus Prom was Martha’s night to shine, so we made sure she stayed in the spotlight. Over the course of the event, I witnessed the kind and gentle nature of Dustin as he so carefully and slowly (almost too slowly) maneuvered my friend’s wheelchair through the crowd and danced with her without hesitation. How Dustin treated my friend Martha is how he treats all people and I am forever grateful to have met a man like him.
+
+                                                            </p>
+                                                        </div>
+                                                    </div><div class="yt-vc-element yt-vc-timeline-item with-subline position-right pull-right text-left">
+                                                        <h2 class="timeline-heading">2009</h2><span class="timeline-subline"><em>Prom Night</em></span><div class="timeline-content">
+                                                            <p>
+                                                                With the help of Facebook, we were in contact and later had our first date at Johnny Carinos. A month after meeting each other, I found out I would be going to CO for 3 months and then AR for another 3 months to complete a level II placement assignment for graduate school. We were not sure how a long distance relationship would work but we were sure that we did not want to say goodbye to each other. So over the course of 6 months, we made the most of the times we were together and shared fun memories along the way. We wrote each other letters (yes…I have many cards with super sweet messages to prove it!), Face timed, and spent time with each other in many states. Despite the challenge of the distance, we were both willing to make the effort because of a beautiful thing called love. God’s love and the love we have for each other keep us strong and committed no matter the circumstances.
+
+                                                            </p>
+                                                        </div>
+                                                    </div><div class="yt-vc-element yt-vc-timeline-item with-subline position-left pull-left text-right">
+                                                        <h2 class="timeline-heading">2012</h2><span class="timeline-subline"><em>The Proposal</em></span><div class="timeline-content">
+                                                            <p>
+                                                                One day short from a year on November 6th, 2015, the same night of Jesus Prom, Dustin proposed. He proposed at his house with a simple yet very sincere request for me to marry him. The surprise of that moment silenced me and helped me savor the most powerful question and lifelong commitment someone could ever ask me. With tears and a choked up “yes” we were full of joy and ready to share the good news with our loved ones. Now as our wedding approaches, we are very excited to share the big day with you!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+
+                                <section class="full-width-wrapper yt-vc-section" id="section-the-wedding"
+                                         style="background-position:center top !important; padding-top: 25px !important; padding-bottom: 0px !important;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h1 style="text-align: center;"><em>The</em> Wedding</h1>
+                                                        <div class="row">
+                                                            <div class="text-center" style="font-size: 18px;">
+                                                                May 7th, 2016
+                                                            </div>
+                                                            <div class="row">&nbsp;</div>
+                                                            <div class="row">
+                                                                <div class="text-center">
+                                                                    <div class="crown"></div>
+                                                                    <h3>Venue</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <h4>Talon Winery & Vineyards</h4>
+                                                                <p>7086 Tates Creek Rd, Lexington, KY 40515</p>
+                                                                <p>
+                                                                    <a class="btn btn-default" href="http://www.talonwine.com/index.php">Visit Website</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">&nbsp;</div>
+                                                        <div class="row">&nbsp;</div>
+                                                        <div class="row">
+                                                            <div class="text-center">
+                                                                <div class="crown"></div>
+                                                                <h3>Accomodations</h3>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="text-center">
+                                                                <h4>Courtyard Lexington South/Hamburg Place</h4>
+                                                                <p>
+                                                                    <strong>Address :</strong> 1951 Pleasant Ridge Drive, I-75 at Man-O-War Boulevard, Lexington, KY 40509
+                                                                </p>
+                                                                <p>
+                                                                    <strong>Phone :</strong> 859-263-9090
+                                                                </p>
+                                                                <p>
+                                                                    <a class="btn btn-default" href="http://www.marriott.com/hotels/travel/lexce-courtyard-lexington-south-hamburg-place/">Visit Website</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">&nbsp;</div>
+                                                        <div class="row">&nbsp;</div>
+
+                                                    </div>
+                                                </div> <div class="clearfix"></div>
+
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <div class="crown"></div>
+                                                        <h3>Itinerary</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="yt-vc-element yt-vc-divider style-shadow-up"><div class="divider"></div></div>
+
+                                                <div class="clearfix"></div>
+
+                                                <div class="smooth-scroller yt-vc-element-wrapper yt-vc-planning-timeline">
+                                                    <div class="yt-vc-planning-timeline-inner-wrapper text-center">
+                                                        <div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/gatheratchurch.png" class="planning-timeline-image" alt="gatheratchurch" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">3:00 PM</span>
+                                                            <h5 class="planning-timeline-title">Meet at Talon</h5>
+                                                        </div>
+                                                        <div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/idometoo.png" class="planning-timeline-image" alt="idometoo" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">4:00 PM</span>
+                                                            <h5 class="planning-timeline-title">The “I Do’s, Me too”</h5>
+                                                        </div>
+                                                        <div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/cocktailhour.png" class="planning-timeline-image" alt="cocktailhour" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">5:00 PM</span>
+                                                            <h5 class="planning-timeline-title">Dinner is Served</h5>
+                                                        </div><div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/dinnerisserved.png" class="planning-timeline-image" alt="dinnerisserved" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">6:30 PM</span>
+                                                            <h5 class="planning-timeline-title">Games &amp; Fun</h5>
+                                                        </div>
+                                                        <div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/toastandcakecutting.png" class="planning-timeline-image" alt="toastandcakecutting" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">7:30</span>
+                                                            <h5 class="planning-timeline-title">Toasts &amp; Cake cutting</h5>
+                                                        </div>
+                                                        <div class="yt-vc-element yt-vc-planning-timeline-item">
+                                                            @*<img width="192" height="192" src="~/images/dancingbegins.png" class="planning-timeline-image" alt="dancingbegins" sizes="(max-width: 192px) 100vw, 192px" />*@
+                                                            <span class="planning-timeline-time">8:30 PM</span>
+                                                            <h5 class="planning-timeline-title">Dancing Begins</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @*<div class="wpb_gmaps_widget yt-vc-element">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="wpb_map_wraper">
+                                                            <style>
+                                                                #embed-map-display img {
+                                                                    max-width: none !important;
+                                                                    background: none !important;
+                                                                }
+                                                            </style>
+                                                            <style>
+                                                                #embed-map-display img {
+                                                                    max-width: none !important;
+                                                                    background: none !important;
+                                                                }
+                                                            </style>
+                                                            <style>
+                                                                #embed-map-display img {
+                                                                    max-width: none !important;
+                                                                    background: none !important;
+                                                                }
+                                                            </style>
+                                                        </div>
+                                                    </div>
+                                                </div><div class="vc_separator yt-vc-element vc_el_width_100 vc_sep_color_grey">
+                                                    <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
+                                                    <span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+                                                </div>*@
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="yt-vc-element yt-vc-divider style-shadow-down"><div class="divider"></div></div>
+
+                                <section class="full-width-wrapper yt-vc-section vc_custom_1449205415432" id="section-rsvp"
+                                         style="background-position:center top !important; padding-top: 0px !important;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h1 style="text-align: center;">
+                                                            <span style="color: black;">RSVP</span>
+                                                        </h1>
+                                                        <div class="row text-center">
+                                                            Please submit one form per person.
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                                <form asp-action="Index">
+                                                    <div class="form-horizontal">
+                                                        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+                                                        <div class="row control-group">                                                            
+                                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                                <label asp-for="FirstName" class="col-md-2 control-label"></label>
+                                                                <input asp-for="FirstName" class="form-control" placeholder="First Name" id="name" />
+                                                                <span asp-validation-for="FirstName" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row control-group">
+                                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                                <label asp-for="LastName" class="col-md-2 control-label"></label>
+                                                                <input asp-for="LastName" class="form-control" placeholder="Last Name" id="name" />
+                                                                <span asp-validation-for="LastName" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row control-group">
+                                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                                <label asp-for="Email" class="col-md-2 control-label"></label>
+                                                                <input asp-for="Email" class="form-control" placeholder="Email Address" id="email" />
+                                                                <span asp-validation-for="Email" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row control-group">
+                                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                                <label asp-for="MobileNumber" class="col-md-2 control-label">Phone Number</label>
+                                                                <input asp-for="MobileNumber" class="form-control" placeholder="Phone Number" id="phone" />
+                                                                <span asp-validation-for="MobileNumber" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">&nbsp;</div>
+                                                        <div class="row control-group">
+                                                            <div class="form-group">
+                                                                <div class="col-xs-12 control-label" style="text-align: left;">
+                                                                    @Html.LabelFor(x => x.IsAttending, "Will you be attending?")
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <div class="radio">
+                                                                        <label>
+                                                                            <input type="radio" name="optradio">
+                                                                            @Html.RadioButtonFor(x => x.IsAttending, "true") Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio">
+                                                                        <label>
+                                                                            <input type="radio" name="optradio">
+                                                                            @Html.RadioButtonFor(x => x.IsAttending, "false") No
+                                                                        </label>
+                                                                    </div>
+                                                                    <span asp-validation-for="IsAttending" class="text-danger" />
+                                                                </div>
+                                                            </div>
+                                                        </div>   
+                                                        <hr />                                                  
+                                                        <div class="row control-group">
+                                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                                <label asp-for="Note" class="col-md-2 control-label">Message (optional)</label>
+                                                                <textarea asp-for="Note" class="form-control" placeholder="Message (optional)" rows="5" id="message"></textarea>
+                                                                <span asp-validation-for="Note" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">&nbsp;</div>
+                                                        <div class="row">
+                                                            <div class="form-group col-xs-12">
+                                                                <input type="submit" value="Send" class="btn btn-default" />
+                                                            </div>
+                                                        </div>                                                       
+                                                    </div>
+                                                </form>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                                <section class="full-width-wrapper yt-vc-section vc_custom_1412500359874" id="section-registry"
+                                         style="background-color: #303030 !important; color: #fff !important; padding-top: 50px; padding-bottom: 70px;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h1 style="text-align: center;"><span style="color: white;">Registry</span></h1>
+                                                        <p style="text-align: center;">
+                                                            <span style="color: #aaaaaa;">We can't wait to get married and are so honored to have you at our wedding! If you would like to help us start our new life together, we have registred for items we would love to have in our home.</span><br />
+                                                            <span style="color: #aaaaaa;"> You can view our registries by clicking on each of the store logos below:</span>
+                                                        </p>
+                                                        <p>&nbsp;</p>
+                                                        <p style="text-align: center;">
+                                                            <a target="_blank" href="http://www1.macys.com/">
+                                                                <img class="alignnone wp-image-941 size-medium" src="~/images/macys2.png" alt="" width="320" height="190" />
+                                                            </a>
+                                                            <a style="padding-left: 20px;" target="_blank" href="http://www.bedbathandbeyond.com/">
+                                                                <img class="alignnone wp-image-942 size-medium" src="~/images/bed_bath__and__beyond.png" alt="" width="310" height="190" />
+                                                            </a>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div><!-- .entry-content -->
+                        </article><!-- #post-## -->
+
+
+
+
+                    </main><!-- #content -->
+
+
+                </div><!-- #primary -->
+
+
+            </div><!-- #main -->
+
+
+            <footer id="colophon" class="site-footer full-width-wrapper hidden-print" role="contentinfo">
+
+
+                <div class="site-info footer-info full-width-wrapper foot-zigzag zigzag-border zigzag-border-top"
+                     style="padding-top: 10px !important;">
+                    <div class="container">
+                        <div class="footer-message">
+                            <p style="text-align: center;">We're incredibly excited to share our day with all of you!</p>
+                            <p style="text-align: center;">Stay tuned for more details!</p>
+                            <p>
+                                Any further questions, please send us an email to: <br />
+                                <a href="mailto:mariaanddustinwedding@gmail.com">MariaAndDustinWedding@gmail.com</a><br />
+                            </p>
+                        </div>
+                        <div class="footer-credit">
+                            <p>
+                                Designed by <a href="http://www.andreosebastiani.com">Andreo</a>.<br />
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- .site-info -->
+
+
+            </footer><!--/#colophon-->
+
+
+        </div><!--/.inner-wrapper-->
+
+
+    </div><!--/#page-->
+
+
+    <div style="display:none">
     </div>
-</div>
+
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 
+</body>
 
-<div class="row">&nbsp;</div>
-
-<div class="row">&nbsp;</div>
-
-<div class="row">
-    <div class="text-center" id="story">
-        <div class="crown"></div>
-        <div class="accomodations">Our Story</div>
-        <div class="row">&nbsp;</div>
-        <div style="font-size: 16px;">
-            <p>
-                We believe we share the best love story because it’s one that magnifies the beauty of God’s goodness and grace. We hope you see the work of God as you read our journey as he deserves all our gratitude for aligning our paths to meet and to later be joined as one in marriage. Our story is His story, as it will be forever.
-            </p>
-            <div class="row">&nbsp;</div>
-            <p>
-                We met at an event called Jesus Prom on November 7th, 2014.  Jesus Prom is a prom for individuals who have disabilities to enjoy a fun night of dancing, games, makeup, photography, food, and prizes. My dear friend and maid of honor, Martha, have been attending the event for the last couple of years without an escort. (An escort is a volunteer who serves as the individual’s date for that night.) It wasn’t until Prom of 2014, Martha received one who proved to be someone very special and spectacular.
-            </p>
-            <div class="row">&nbsp;</div>
-            <p>
-                As Martha and I were entering the doorway, we were stopped by a man who asked if Martha would like to be accompanied by an escort. After talking to Martha earlier about her wanting an escort, I voiced for her that she would. The nice man pointed to one of the hundred volunteers in line who was Dustin. Dustin was not the next volunteer in line or close to the front, but in God’s plan, he was chosen for a reason. Martha and I met a wonderful person who was funny, sweet, and fun to be around. Jesus Prom was Martha’s night to shine, so we made sure she stayed in the spotlight. Over the course of the event, I witnessed the kind and gentle nature of Dustin as he so carefully and slowly (almost too slowly) maneuvered my friend’s wheelchair through the crowd and danced with her without hesitation. How Dustin treated my friend Martha is how he treats all people and I am forever grateful to have met a man like him.
-            </p>
-            <div class="row">&nbsp;</div>
-            <p>
-                With the help of Facebook, we were in contact and later had our first date at Johnny Carinos. A month after meeting each other, I found out I would be going to CO for 3 months and then AR for another 3 months to complete a level II placement assignment for graduate school. We were not sure how a long distance relationship would work but we were sure that we did not want to say goodbye to each other. So over the course of 6 months, we made the most of the times we were together and shared fun memories along the way. We wrote each other letters (yes…I have many cards with super sweet messages to prove it!), Face timed, and spent time with each other in many states. Despite the challenge of the distance, we were both willing to make the effort because of a beautiful thing called love. God’s love and the love we have for each other keep us strong and committed no matter the circumstances.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="row">&nbsp;</div>
-
-<div class="row">
-    <div class="text-center">
-        <div class="crown"></div>
-        <div class="accomodations">Our Proposal</div>
-        <div class="row">&nbsp;</div>
-        <div style="font-size: 16px;">
-            <p>
-                One day short from a year on November 6th, 2015, the same night of Jesus Prom, Dustin proposed. He proposed at his house with a simple yet very sincere request for me to marry him. The surprise of that moment silenced me and helped me savor the most powerful question and lifelong commitment someone could ever ask me. With tears and a choked up “yes” we were full of joy and ready to share the good news with our loved ones. Now as our wedding approaches, we are very excited to share the big day with you!
-            </p>
-        </div>
-    </div>
-</div>
 
 @section scripts {
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript">
+                                        /* <![CDATA[ */
+                                        var heroBannerVars = {
+                                            until: new Date(2016, 05 - 1, 07, 12, 00),
+                                            format: "DHMS",
+                                            layout: "<span class=\"countdown-section\">{dn}<span class=\"countdown-label\">{dl}</span></span>.<span class=\"countdown-section\">{hnn}<span class=\"countdown-label\">{hl}</span></span>.<span class=\"countdown-section\">{mnn}<span class=\"countdown-label\">{ml}</span></span>.<span class=\"countdown-section\"><span>{snn}</span><span class=\"countdown-label\">{sl}</span></span>",
+                                            labels: ["Year", "Months", "Weeks", "Days", "Hours", "Minutes", "Seconds"],
+                                            /*The expanded texts for the counters*/
+                                            labels1: ["Year", "Month", "Week", "Day", "Hour", "Minute", "Second"]
+
+                                        }
+                                        /* ]]> */
+    </script>
+
+    <script type="text/javascript">
+                                        /* <![CDATA[ */
+                                        var heroBannerVars = {
+                                            until: new Date(2016, 05 - 1, 07, 12, 00),
+                                            format: "DHMS",
+                                            layout: "<span class=\"countdown-section\">{dn}<span class=\"countdown-label\">{dl}</span></span>.<span class=\"countdown-section\">{hnn}<span class=\"countdown-label\">{hl}</span></span>.<span class=\"countdown-section\">{mnn}<span class=\"countdown-label\">{ml}</span></span>.<span class=\"countdown-section\"><span>{snn}</span><span class=\"countdown-label\">{sl}</span></span>",
+                                            labels: ["Year", "Months", "Weeks", "Days", "Hours", "Minutes", "Seconds"],
+                                            /*The expanded texts for the counters*/
+                                            labels1: ["Year", "Month", "Week", "Day", "Hour", "Minute", "Second"]
+
+                                        }
+                                        /* ]]> */
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script>
-        $("#story").click(function () {
-            $("p").toggle();
+        jQuery(function ($) {
+            $("#phone").mask("(999) 999-9999");
         });
+    </script>
+    <script>
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
     </script>
 }
