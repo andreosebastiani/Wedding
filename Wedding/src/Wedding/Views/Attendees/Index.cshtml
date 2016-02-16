@@ -4,66 +4,83 @@
     ViewData["Title"] = "Index";
 }
 
+<div class="row">&nbsp;</div>
+<div class="row">&nbsp;</div>
 
-<h2>Attendees</h2>
+<div class="row">
+    <div class="text-center">
+        <h2>Attendees</h2>
+    </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table table-text" id="myTable">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsAttending)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MobileNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Note)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="row"><hr /></div>
+
+<div class="col-md-offset-2 col-md-8">
+
+    <buton class="btn">
+        <a asp-action="Create">Create New</a>
+    </buton>
+    <table class="table table-text" id="myTable">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IsAttending)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.MobileNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Note)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.AttendeeID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.AttendeeID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.AttendeeID">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAttending)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MobileNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Note)
+                </th>
+                <th></th>
             </tr>
-        }
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsAttending)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MobileNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Note)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.AttendeeID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.AttendeeID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.AttendeeID">Delete</a>
+                    </td>
+                </tr>
+            }
+    </table>
+</div>
+
+<div class="text-center">
+    <a class="btn btn-lg" href="@Url.Action("Index", "Home")">Back to Home</a>
+</div>
+
+
 
 @section Scripts {
     <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
