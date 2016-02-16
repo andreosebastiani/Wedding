@@ -5,58 +5,26 @@
     font-size: 40px;
 }
 
+.bible {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: #D7B583;
+}
+
+.verse {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #D7B583;
+    font-size: 20px;
+}
 
 
-.floating-label-form-group {
-  font-size: 14px;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+.crown {
+    background-position: center;
+    background-image: url(https://www.theknot.com/gs/assets/guest/themes/gatsby_love-gold_&_black/section_title_border_image-2fe7d62813860091d2cfc3d57a92b4ff.png);
+    height: 40px;
+    background-repeat: no-repeat;
 }
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  z-index: 1;
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
-  resize: none;
-}
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
-}
-.floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eeeeee;
-}
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-.floating-label-form-group-with-focus label {
-  color: #dd1144;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
-}
+
 
 #circle {
 	width: 100px;
@@ -66,6 +34,8 @@ form .row:first-child .floating-label-form-group {
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 }
+
+
 
 #back-to-top {
     position: fixed;
@@ -91,4 +61,15 @@ form .row:first-child .floating-label-form-group {
 }
 #back-to-top.show {
     opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  #back-to-top {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
 }
