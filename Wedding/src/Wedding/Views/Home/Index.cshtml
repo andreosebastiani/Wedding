@@ -43,8 +43,9 @@
                                     <li class="menu-item-anchor"><a href="#section-we">We</a></li>
                                     <li class="menu-item-anchor"><a href="#section-our-story">Our Story</a></li>
                                     <li class="menu-item-anchor"><a href="#section-the-wedding">The Wedding</a></li>
-                                    <li class="menu-item-anchor"><a href="#section-rsvp">RSVP</a></li>
                                     <li class="menu-item-anchor"><a href="#section-registry">Registry</a></li>
+                                    <li class="menu-item-anchor"><a href="#section-rsvp">RSVP</a></li>
+
                                 </ul>
                             </div>
                         </nav><!-- #site-navigation --><a href="javascript:void(0)" class="main-menu-toggle hidden-md hidden-lg">
@@ -376,11 +377,37 @@
                                     </div>
                                 </section>
 
-                                <div class="yt-vc-element yt-vc-divider style-shadow-up"><div class="divider"></div></div>
+                                <section class="full-width-wrapper yt-vc-section vc_custom_1412500359874" id="section-registry"
+                                         style="background-color: #303030 !important; color: #fff !important; padding-top: 80px; padding-bottom: 100px;">
+                                    <div class="container">
+                                        <div class="row yt-vc-row">
+                                            <div class="col-sm-12 yt-vc-column">
+                                                <div class="wpb_text_column yt-vc-element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h1 style="text-align: center;"><span style="color: white;">Registry</span></h1>
+                                                        <p style="text-align: center;">
+                                                            <span style="color: #fff;">We can't wait to get married and are so honored to have you at our wedding! If you would like to help us start our new life together, we have registred for items we would love to have in our home.</span><br />
+                                                            <span style="color: #fff;"> You can view our registries by clicking on each of the store logos below:</span>
+                                                        </p>
+                                                        <p>&nbsp;</p>
+                                                        <p style="text-align: center;">
+                                                            <a target="_blank" href="http://www.target.com/gift-registry/giftgiver?registryId=uFuh3Yx4N44aGgvAgF25bg&registryType=WEDDING">
+                                                                <img class="alignnone wp-image-941 size-medium" src="~/images/Target_Logo.svg.png" alt="" width="320" height="190" />
+                                                            </a>
+                                                            <a style="padding-left: 20px;" target="_blank" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542955523&pwsurl=">
+                                                                <img class="alignnone wp-image-942 size-medium" src="~/images/bed_bath__and__beyond.png" alt="" width="310" height="190" />
+                                                            </a>
+                                                        </p>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
                                 <section class="full-width-wrapper yt-vc-section vc_custom_1449205415432" id="section-rsvp"
-                                         style="background-position:center top !important; padding-top: 0px !important;">
+                                         style="background-position:center top !important; padding-top: 50px !important;">
                                     <div class="container">
                                         <div class="row yt-vc-row">
                                             <div class="col-sm-12 yt-vc-column">
@@ -448,7 +475,7 @@
                                                         <div class="form-group">
                                                             <label asp-for="Note" class="col-md-2 control-label">Note (optional)</label>
                                                             <div class="col-md-10">
-                                                                <textarea asp-for="Note" class="form-control" rows="5" id="comment"></textarea>
+                                                                <textarea asp-for="Note" class="form-control" rows="5" maxlength="2048" id="comment"></textarea>
                                                                 <span asp-validation-for="Note" class="text-danger" />
                                                             </div>
                                                         </div>
@@ -466,34 +493,7 @@
                                     </div>
                                 </section>
 
-                                <section class="full-width-wrapper yt-vc-section vc_custom_1412500359874" id="section-registry"
-                                         style="background-color: #303030 !important; color: #fff !important; padding-top: 80px; padding-bottom: 120px;">
-                                    <div class="container">
-                                        <div class="row yt-vc-row">
-                                            <div class="col-sm-12 yt-vc-column">
-                                                <div class="wpb_text_column yt-vc-element ">
-                                                    <div class="wpb_wrapper">
-                                                        <h1 style="text-align: center;"><span style="color: white;">Registry</span></h1>
-                                                        <p style="text-align: center;">
-                                                            <span style="color: #fff;">We can't wait to get married and are so honored to have you at our wedding! If you would like to help us start our new life together, we have registred for items we would love to have in our home.</span><br />
-                                                            <span style="color: #fff;"> You can view our registries by clicking on each of the store logos below:</span>
-                                                        </p>
-                                                        <p>&nbsp;</p>
-                                                        <p style="text-align: center;">
-                                                            <a target="_blank" href="http://www.target.com/gift-registry/giftgiver?registryId=uFuh3Yx4N44aGgvAgF25bg&registryType=WEDDING">
-                                                                <img class="alignnone wp-image-941 size-medium" src="~/images/Target_Logo.svg.png" alt="" width="320" height="190" />
-                                                            </a>
-                                                            <a style="padding-left: 20px;" target="_blank" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542955523&pwsurl=">
-                                                                <img class="alignnone wp-image-942 size-medium" src="~/images/bed_bath__and__beyond.png" alt="" width="310" height="190" />
-                                                            </a>
-                                                        </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                                
                             </div><!-- .entry-content -->
                         </article><!-- #post-## -->
 
@@ -513,7 +513,7 @@
 
 
                 <div class="site-info footer-info full-width-wrapper foot-zigzag zigzag-border zigzag-border-top"
-                     style="padding-top: 10px !important;">
+                     style="padding-top: 10px !important; background-color: #303030; color: white;">
                     <div class="container">
                         <div class="footer-message">
                             <div class="row">&nbsp;</div>
