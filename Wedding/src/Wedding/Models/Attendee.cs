@@ -28,6 +28,10 @@ namespace Wedding.Models
 
         [Required(ErrorMessage = "Please select an option")]
         public bool IsAttending { get; set; }
+        public string Guest1 { get; set; }
+        public string Guest2 { get; set; }
+        public string Guest3 { get; set; }
+        public string Guest4 { get; set; }
 
         [StringLength(2048, ErrorMessage = "Note cannot exceed 2048 characters.")]
         public string Note { get; set; }

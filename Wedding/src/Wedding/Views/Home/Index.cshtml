@@ -416,9 +416,7 @@
                                                         <h1 style="text-align: center;">
                                                             <span style="color: black;">RSVP</span>
                                                         </h1>
-                                                        <div style="font-size: 14px; font-weight: bold" class="row text-center">
-                                                            Please submit one form per person.
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>                                                
                                                 <form asp-action="Index">
@@ -470,6 +468,38 @@
                                                                     </label>
                                                                 </div>
                                                                 <span asp-validation-for="IsAttending" class="text-danger" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-2 control-label">
+                                                                @Html.Label("How many people in your party?")                                                          
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <select id="guest-sel">
+                                                                    <option value="">- select -</option>
+                                                                    <option value="option1">1</option>
+                                                                    <option value="option2">2</option>
+                                                                    <option value="option3">3</option>
+                                                                    <option value="option4">4</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <label class="guest" style="display: block;" id="label1" for="option1">
+                                                                    Guest 1 Name
+                                                                    <input asp-for="Guest1" class="guest-input form-control" type="text" id="option1" />
+                                                                </label>
+                                                                <label class="guest" style="display: block;" id="label2" for="option2">
+                                                                    Guest 2 Name
+                                                                    <input asp-for="Guest2" class="guest-input form-control" type="text" id="option2" />
+                                                                </label>
+                                                                <label class="guest" style="display: block;" id="label3" for="option3">
+                                                                    Guest 3 Name
+                                                                    <input asp-for="Guest3" class="guest-input form-control" type="text" id="option3" />
+                                                                </label>
+                                                                <label class="guest" style="display: block;" id="label4" for="option4">
+                                                                    Guest 4 Name
+                                                                    <input asp-for="Guest4" class="guest-input form-control" type="text" id="option4" />
+                                                                </label>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
@@ -603,6 +633,47 @@
     <script>
         jQuery(function ($) {
             $("#phone").mask("(999) 999-9999");
+        });
+    </script>
+    <script>
+        $(function () {
+            //This hides all initial textboxes
+            $('.guest').hide();
+            $('#guest-sel').change(function () {
+                //This saves some time by caching the jquery value
+                var val = $(this).val();
+                //this hides any boxes that the previous selection might have left open
+                $('.guest').hide();
+                //This just opens the ones we want based off the selection
+                switch (val) {
+                    case 'option1':
+                    case 'other':
+                        $('#label1').show();
+                        break;
+                    case 'option2':
+                        $('#label1').show();
+                        $('#label2').show();
+                        break;
+                    case 'option3':
+                        $('#label1').show();
+                        $('#label2').show();
+                        $('#label3').show();
+                        break;
+                    case 'option4':
+                        $('#label1').show();
+                        $('#label2').show();
+                        $('#label3').show();
+                        $('#label4').show();
+                }
+            });
+            //I'm not really sure why these are here
+            $(".guest-input")
+            .focus(function () {
+                $(this).next("span").fadeIn(1000);
+            })
+            .blur(function () {
+                $(this).next("span").fadeOut(1000);
+            });
         });
     </script>
     <script>
