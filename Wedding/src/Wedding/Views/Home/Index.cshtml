@@ -61,17 +61,18 @@
             <div id="main" class="site-main">
                 <div class="full-width-wrapper hidden-print hero-banner gradient-shadow-overlay">
                     <div class="loader"></div>
-                    <div class="hero-banner-slider visibility-hidden" data-bg=""
-                         data-role="hero-banner">
-                        <div class="yeahslider"
-                              data-settings="{&quot;selector&quot;:&quot;.slides &gt; li&quot;,&quot;controlNav&quot;:false,&quot;directionNav&quot;:false,&quot;pausePlay&quot;:false,&quot;animationLoop&quot;:false,&quot;animation&quot;:&quot;fade&quot;,&quot;pauseOnHover&quot;:false,&quot;slideshowSpeed&quot;:7000,&quot;animationSpeed&quot;:1500,&quot;useCSS&quot;:true,&quot;touch&quot;:false,&quot;keyboard&quot;:false,&quot;allowOneSlide&quot;:true}" data-init="none">
-                        <ul class="slides">
-                                <li data-thumb="">
-                                <img width="1024" height="683" src="~/images/horses w D.jpg" class="attachment-full size-full" alt="Maria+Dustin" sizes="(max-width: 1024px) 100vw, 1024px" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div><div class="hero-banner-overlay-layer full-width-wrapper visibility-hidden">
+                    <div class="hero-banner-slider visibility-hidden" 
+                         data-bg="~/images/horses w D.jpg"
+                         data-role="hero-banner"><div class="yeahslider" 
+                        data-settings="{&quot;selector&quot;:&quot;.slides &gt; li&quot;,&quot;controlNav&quot;:false,&quot;directionNav&quot;:false,&quot;pausePlay&quot;:false,&quot;animationLoop&quot;:false,&quot;animation&quot;:&quot;fade&quot;,&quot;pauseOnHover&quot;:false,&quot;slideshowSpeed&quot;:7000,&quot;animationSpeed&quot;:1500,&quot;useCSS&quot;:true,&quot;touch&quot;:false,&quot;keyboard&quot;:false,&quot;allowOneSlide&quot;:true}" 
+                        data-init="none"><ul class="slides">
+                        <li data-thumb="~/images/horses w D.jpg">
+                        <img width="1024" height="683" src="~/images/horses w D.jpg" 
+                             class="attachment-full size-full" 
+                             alt="Tara+Gabe_061" 
+                             srcset="~/images/horses w D.jpg" 768w, 1024w" 
+                             sizes="(max-width: 1024px) 100vw, 1024px" /></li></ul></div></div>                    
+                <div class="hero-banner-overlay-layer full-width-wrapper visibility-hidden">
                         <div class="hero-banner-overlay-layer-inner">
                             <div class="container">
                                 <div class="row">
@@ -483,21 +484,21 @@
                                                                     <option value="option4">4</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-10" style="padding-top: 15px; padding-bottom: 10px;">
                                                                 <label class="guest" style="display: block;" id="label1" for="option1">
-                                                                    Guest 1 Name
+                                                                    Guest <strong>1</strong> Name:
                                                                     <input asp-for="Guest1" class="guest-input form-control" type="text" id="option1" />
                                                                 </label>
                                                                 <label class="guest" style="display: block;" id="label2" for="option2">
-                                                                    Guest 2 Name
+                                                                    Guest <strong>2</strong> Name:
                                                                     <input asp-for="Guest2" class="guest-input form-control" type="text" id="option2" />
                                                                 </label>
                                                                 <label class="guest" style="display: block;" id="label3" for="option3">
-                                                                    Guest 3 Name
+                                                                    Guest <strong>3</strong> Name:
                                                                     <input asp-for="Guest3" class="guest-input form-control" type="text" id="option3" />
                                                                 </label>
                                                                 <label class="guest" style="display: block;" id="label4" for="option4">
-                                                                    Guest 4 Name
+                                                                    Guest <strong>4</strong> Name:
                                                                     <input asp-for="Guest4" class="guest-input form-control" type="text" id="option4" />
                                                                 </label>
                                                             </div>
@@ -559,6 +560,7 @@
                         <div>
                             <p>
                                 Created by <a href="http://www.andreosebastiani.com">Andreo</a>.<br />
+                                &copy; @DateTime.Now.Year YeahThemes. All Rights Reserved.
                             </p>
                             
                         </div>
