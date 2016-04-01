@@ -11,11 +11,17 @@
     <div class="text-center">
         <h2>Attendees</h2>
     </div>
+
+    <div class="text-center">
+        # Attending (Excluding Guests) - @Model.Count(x => x.IsAttending)
+    </div>
 </div>
 
 <div class="row"><hr /></div>
 
-<div class="col-md-offset-2 col-md-8">
+
+
+<div class="col-md-12">
 
     <buton class="btn">
         <a asp-action="Create">Create New</a>
